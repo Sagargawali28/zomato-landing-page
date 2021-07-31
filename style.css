@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header {
+  display: block;
+}
+
+body {
+    background-color: #ebf2ff;
+    font-family: 'Merriweather', serif;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+section {
+  margin: 4rem 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-size: 100% auto;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-creative-foodie-food-festival-hd-background-image_207691.jpg);
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.brand__logo {
+    width: 100%;
+    height: 100%;
+
+    
+}
+.navbar__brand {
+    width: 100px;
+    
+    
+}
+.navbar__nav__items {
+  display: flex;
+}
+
+.navbar__button {
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: white;
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  background-size: 200% auto;
+  cursor: pointer;
+  transition: 0.5s;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px #eee;
+  text-transform: capitalize;
+ 
+}
+.navbar__button:hover {
+    background-position:right center;
+    color: white;
+    
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero__container {
+  margin-top: 1px;
+
+
+}
+.hero__image__container {
+  width: 100%;
+  position: relative;
+}
+.hero__image {
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 3;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    padding-top: 30px;
+}
+.hero__image__shape {
+  position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: -3;
+}
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero__text {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #1d3557;
+  font-weight: 900;
+}
+.video__footage__container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.video__footage {
+  position: relative;
+}
+.video__footage::before {
+  background-image: linear-gradient(   to right, #ff512f 0%,#dd2476 51%,  #ff512f 100% );
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(1rem, 1rem);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.video__footage__text {
+  margin-top: 2rem;
+  color: #1d3557;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+.food__list__container {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.text-xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #1d3557;
+  font-weight: 900;
+}
+.food__menu__card__list {
+  width: 100%;
+}
+.food__menu__card {
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+  width: 100%;
+}
+.food__menu__card__image {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+}
+.food__menu__card__details {
+  padding: 1rem;
+  text-align: left;
+  color: #1d3557;
+}
+.food__list__view__more{
+  display: inline-block;
+  text-decoration: none;
+  color:black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.food__list__view__more:hover {
+  border: 1px solid black;
+   background: white;
+  transition: 1s;
+}
+.restaurant__list__container {
+  margin-top: 3rem;
+}
+.restaurant__list__text {
+  margin: 1rem 0;
+}
+.restaurant__list__row_1 {
+  display: flex;
+  align-items: baseline;
+}
+.restaurant1, .restaurant3 {
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 150px;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.restaurant__list__row_2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.restaurant2, .restaurant4 {
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 200px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.email__subcribe__container {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.email__subcribe__input__field {
+  display: flex;
+  align-items: center;
+}
+.email__input {
+  border: 1px solid #ee89a0;
+  background-color: #fcedf0;
+  color: #1d3557;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.quote__container {
+  position: relative;
+  margin-top: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  border-radius: 13px;
+  background: url(https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80) center center / cover no-repeat;
+}
+.quote_image_overlay {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #0a4065;
+  opacity: 49%;
+}
+.quote_image_text {
+  color: #fff;
+  z-index: 3;
+  margin: 0 1rem;
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem 1rem 0 0;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+
+footer > img {
+  width: 300px;
+  filter: brightness(0) invert(1);
+}
+
+footer > ul {
+  margin-top: -1rem;
+  color: #fff;
+}
+
+footer > ul > li {
+  margin: 5px 0;
+}
+
+
+
+@media (min-width: 768px) {
+  
+  .hero__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .hero__image {
+    margin-top: 2rem;
+    padding-top: 10px;
+  }
+
+  .hero__text {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+.text-xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.food__menu__card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.food__menu__card {
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.food__menu__card__move__up {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.food__list__view__more {
+  background: none;
+}
+
+.video__footage__container {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.video__footage {
+  margin-right: 2rem;
+}
+.video__footage__text {
+  margin-left: 2rem;
+}
+.food__list__container {
+  position: relative;
+  margin: 5rem 0;
+}
+
+.food__list__container__diagonal {
+ position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewY(-6deg);
+  background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+  z-index: -3;
+  margin: 15px 0;
+}
+.restaurant__list__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.restaurant__list__row_1 {
+  justify-content: center;                                       
+}
+.restaurant__list__row_2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.email__subcribe__container {
+  display: flex;
+  justify-content: center;
+}
+.email__input {
+  width: 20rem;
+}
+.quote__container {
+  height: 300px;
+  width: 100%;
+}
+.quote_image_overlay {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #0a4065;
+  opacity: 49%;
+}
+.quote_image_text {
+  color: #fff;
+  z-index: 3;
+  margin: 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+footer {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-size: 100% auto;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-creative-foodie-food-festival-hd-background-image_207691.jpg);
+    padding: 0 50px;
+    background-size: 100% auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+  .navbar__brand {
+    width: 120px;
+  }
+  
+  .navbar__button {
+    font-size: 16px;
+   padding: 12px 16px;
+    font-weight: bold;
+  }
+
+  .hero__text {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .video__footage__container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .video__footage {
+    margin-right: 2rem;
+  }
+  .video__footage__text {
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+.text-xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #1d3557;
+  font-weight: 900;
+}
+
+.restaurant2,
+.restaurant4 {
+  width: 300px;
+  height: 260px;
+}
+.restaurant1,
+.restaurant3 {
+  width: 250px;
+  height: 180px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1250px;
+  }
+  .video__footage__container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .video__footage {
+    margin-right: 2rem;
+  }
+  .video__footage__text {
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+}
